@@ -16,3 +16,10 @@ Controller.
 Phase 2
 I created the View class that displays menu and accepts the user input. Keeping the input/output in a separate 
 class makes it easier to maintain and test without needing to change the logic in the Model class.
+
+Phase 3
+The user inputs the command, the view sends it to the controller, the controller sends it to the model, the model
+updates it's state and sends it to the controller to update the view.
+
+I ran out of time before the due date, and was having trouble figuring out how exactly to structure the input
+output loop that goes in the start method. I'm just submitting it before the due date is over.

@@ -11,21 +11,24 @@ public class CoffeePotModel {
     }
     public void brew(int amount){
         currentVolume = currentVolume + amount;
-        if(currentVolume > maxCapacity){
+        if (amount <= 0){
+            throw new IllegalArgumentException("Enter an amount that is not a negative number.");
+        }else if(currentVolume > maxCapacity){
             throw new IllegalStateException("Amount exceeds maximum capacity.");
         }
-        System.out.println("Coffee pot is filled to " + currentVolume + " ounces.");
+        System.out.println("Brewed " + currentVolume + " ounces of coffee.");
     }
 
     public void pour(int amount){
         currentVolume = currentVolume - amount;
         //ArgumentException if negative amount passed
-        //StateException if pour results in negative volume
+
         if(amount <= 0){
             throw new IllegalArgumentException("Enter an amount that is not a negative number.");
         }else if(currentVolume < 0){
-            throw new IllegalStateException("Enter smaller amount.");
+            //StateException if pour results in negative volume
+            throw new IllegalStateException("Amount exceeds current volume. Enter smaller amount.");
         }
-        System.out.println("Pours coffee of " + amount + " ounces.");
+        System.out.println("Poured " + amount + " ounces of coffee.");
     }
 }

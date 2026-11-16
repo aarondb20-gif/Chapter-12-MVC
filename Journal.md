@@ -12,3 +12,7 @@ I made the Model class that keeps track of the current volume and maximum capaci
 method. The Model class holds the logic and state of the program in the MVC pattern. It has to validate it's own
 state so it can remain independent of a Controller and View, and send notification of it's changed state to the 
 Controller.
+
+Phase 2
+I created the View class that displays menu and accepts the user input. Keeping the input/output in a separate 
+class makes it easier to maintain and test without needing to change the logic in the Model class.

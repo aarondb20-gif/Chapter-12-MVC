@@ -1,0 +1,19 @@
+Object-oriented programming (OOP) is a programming paradigm that organizes software around objects—self-contained units
+that bundle data (attributes/fields) and behavior (methods/functions) together. Instead of writing a program solely as
+a sequence of procedures acting on separate data, OOP models systems as collections of interacting objects.
+
+• Encapsulation: Bundles data (fields) and methods that operate on that data inside a single unit (such as a class),
+ while restricting direct external access to internal state. Controlled access—often through public getters, setters,
+ or methods—prevents accidental corruption of object state.
+
+• Abstraction: Hides complex internal implementation details and exposes only essential features or interfaces. Users
+interact with simple operations (like pressing a button or calling a method) without needing to know how the underlying
+ logic works. In languages like Java, this is commonly achieved with abstract classes and interfaces.
+
+• Inheritance: Lets a new class (subclass or child class) acquire fields and methods from an existing class (superclass
+ or parent class). It models an "is-a" relationship and supports code reuse and extension without duplicating shared
+ behavior.
+
+ Polymorphism: Allows objects of different classes to be treated through a common interface or base type while
+ responding in their own specific ways. It commonly appears as method overriding (runtime behavior customized in a
+ subclass) and method overloading (same method name with different parameters).

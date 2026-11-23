@@ -6,8 +6,8 @@ public class CoffeePotModel {
         this.currentVolume = currentVolume;
         this.maxCapacity = maxCapacity;
     }
-    public int getCurrentVolume(){
-        return currentVolume;
+    public String getStatus(){
+        return "Coffee Pot status: " + currentVolume + " / " + maxCapacity + " oz in pot." ;
     }
     public void brew(int amount){
 

@@ -29,9 +29,10 @@ public class CoffeePotControl {
                     handlePour(parts);
                     break;
                 case "status":
-                    view.displayMessage(String.valueOf(model.getCurrentVolume()) + " oz left in pot.");
+                    view.displayMessage(model.getStatus());
+                    view.displayMessage("-----------------------------------------------");
                     break;
-                case "exit":
+                case "x":
                     view.displayMessage("Shutting down coffee pot.");
                     on = false;
                     break;
@@ -50,6 +51,7 @@ public class CoffeePotControl {
         try {
             model.brew(amount);
             view.displayMessage("Brewed " + amount + " oz of coffee.");
+            view.displayMessage("------------------------------------");
         } catch (IllegalArgumentException | IllegalStateException e) {
             view.displayMessage("Cannot brew: " + e.getMessage());
         }
@@ -64,6 +66,7 @@ public class CoffeePotControl {
         try {
             model.pour(amount);
             view.displayMessage("Poured " + amount + " oz of coffee.");
+            view.displayMessage("------------------------------------");
         } catch (IllegalArgumentException | IllegalStateException e) {
             view.displayMessage("Cannot pour: " + e.getMessage());
         }

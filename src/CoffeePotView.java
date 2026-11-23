@@ -8,11 +8,11 @@ public class CoffeePotView {
     }
 
     public void showMenu(){
-        System.out.println("=== Coffee Maker ===");
-        System.out.println(" brew<amt>  - Brew amount in ounces of coffee");
-        System.out.println(" pour<amt>  - Pour amount in ounces of coffee");
-        System.out.println(" status     - Check current coffee pot level ");
-        System.out.println(" exit       - Exit the program.");
+        System.out.println("=============== Coffee Maker ==============");
+        System.out.println(" brew <amt>  - Brew amount in ounces of coffee");
+        System.out.println(" pour <amt>  - Pour amount in ounces of coffee");
+        System.out.println(" status      - Check current coffee pot level ");
+        System.out.println(" x           - Exit the program.");
     }
 
     public String getUserInput(){
